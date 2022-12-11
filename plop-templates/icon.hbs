@@ -1,0 +1,18 @@
+import * as React from 'react';
+import Icon from '../icon';
+import type { IconProps } from '../icon/interface';
+
+const {{ name }}Icon = (props: IconProps, svgRef?: React.Ref<SVGSVGElement>) => {
+  return React.createElement(Icon, {
+    ...props,
+    component: () => (
+      <svg width="1em" height="1em" viewBox="0 0 1000 1000" fill="currentColor" focusable={false} aria-hidden="true" ref={svgRef}>
+        /*
+         * You should remove this comment.Copy all paths from svg icon into here
+         */
+      </svg>
+    ),
+  });
+};
+
+export default React.forwardRef({{ name }}Icon);
