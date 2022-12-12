@@ -3,6 +3,7 @@ node_modules
 coverage
 .idea
 es
+types
 lib
 dist
 esm
