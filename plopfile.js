@@ -18,13 +18,13 @@ module.exports = (plop) => {
     actions: [
       {
         type: 'add',
-        path: 'src/react/{{name}}Icon.tsx',
+        path: 'src/react-icon/Icon{{name}}.tsx',
         templateFile: './plop-templates/icon.hbs',
       },
       {
         type: 'append',
-        path: 'src/react/index.tsx',
-        template: 'export { default as {{name}}Icon } from "./{{name}}Icon";',
+        path: 'src/react-icon/index.tsx',
+        template: 'export { default as Icon{{name}} } from "./{{name}}Icon";',
       },
     ],
   });
