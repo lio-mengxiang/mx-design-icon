@@ -8,7 +8,7 @@ The icon warehouse of mx-design has the following features:
 
 Script path:
 ```
-./src/generateIcons.js
+./srcript/generateIcons.js
 ```
 It also contains a use case. If you download icons from icon-font, this repository contains a script that can read the symbol-mode js file you pulled from icon-font, and then extract the <path> tag content of all elements in it. Then they are packaged as Icon files that react can use directly.
 
