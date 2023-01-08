@@ -1,7 +1,7 @@
 import React from 'react';
 import { CompoundedComponent, IconProps } from './interface';
 import createFromIconfont from './IconFont';
-import { classnames as cs } from '@mx-design/utils';
+import { cs } from '../../../mx-design-utils/src';
 
 const INNER_SVG_PROPS = {
   width: '1em',

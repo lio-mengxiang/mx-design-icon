@@ -26,4 +26,7 @@ export default defineConfig({
     open: true,
   },
   plugins: [react()],
+  define: {
+    process: process,
+  },
 });

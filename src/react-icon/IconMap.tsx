@@ -1,18 +1,16 @@
+import * as React from 'react';
+import Icon from '../icon';
+import type { IconProps } from '../icon/interface';
 
-  import * as React from 'react';
-  import Icon from '../icon';
-  import type { IconProps } from '../icon/interface';
+const IconMapIcon = (props: IconProps, svgRef?: React.Ref<SVGSVGElement>) => {
+  return React.createElement(Icon, {
+    ...props,
+    component: () => (
+      <svg width="1em" height="1em" viewBox="0 0 1000 1000" fill="currentColor" focusable={false} aria-hidden="true" ref={svgRef}>
+        <path d="M512 74.666667C317.866667 74.666667 160 234.666667 160 428.8c0 264.533333 320 484.266667 334.933333 492.8 6.4 4.266667 10.666667 6.4 17.066667 6.4s12.8-2.133333 17.066667-6.4c12.8-8.533333 334.933333-228.266667 334.933333-492.8C864 234.666667 706.133333 74.666667 512 74.666667z m0 782.933333c-66.133333-49.066667-288-228.266667-288-426.666667 0-160 130.133333-290.133333 288-290.133333s288 130.133333 288 290.133333c0 196.266667-221.866667 377.6-288 426.666667z"></path>
+      </svg>
+    ),
+  });
+};
 
-  const IconMapIcon = (props: IconProps, svgRef?: React.Ref<SVGSVGElement>) => {
-    return React.createElement(Icon, {
-      ...props,
-      component: () => (
-        <svg width="1em" height="1em" viewBox="0 0 1000 1000" fill="currentColor" focusable={false} aria-hidden="true" ref={svgRef}>
-          <path d="M512 74.666667C317.866667 74.666667 160 234.666667 160 428.8c0 264.533333 320 484.266667 334.933333 492.8 6.4 4.266667 10.666667 6.4 17.066667 6.4s12.8-2.133333 17.066667-6.4c12.8-8.533333 334.933333-228.266667 334.933333-492.8C864 234.666667 706.133333 74.666667 512 74.666667z m0 782.933333c-66.133333-49.066667-288-228.266667-288-426.666667 0-160 130.133333-290.133333 288-290.133333s288 130.133333 288 290.133333c0 196.266667-221.866667 377.6-288 426.666667z"></path>
-        </svg>
-      ),
-    });
-  };
-
-  export default React.forwardRef(IconMapIcon);
-  
+export default React.forwardRef(IconMapIcon);
