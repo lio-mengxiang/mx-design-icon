@@ -13,10 +13,10 @@ const INNER_SVG_PROPS = {
 
 const Icon = React.forwardRef<HTMLElement, IconProps>((props, ref) => {
   const { className, type, style, prefixCls, theme, size, children, component: SvgComponent, viewBox, ...rest } = props;
-  const cls = cs(`${prefixCls}--basic-icon`, className, {
-    [`${prefixCls}--${type}`]: !!type,
-    [`${prefixCls}--${theme}`]: !!theme,
-    [`${prefixCls}--${size}`]: !!size,
+  const cls = cs(`${prefixCls}-basic-icon`, className, {
+    [`${prefixCls}-${type}`]: !!type,
+    [`${prefixCls}-${theme}`]: !!theme,
+    [`${prefixCls}-${size}`]: !!size,
   });
 
   const newProps = {
