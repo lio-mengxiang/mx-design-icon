@@ -1,0 +1,12 @@
+
+> @mx-design/icon@0.2.0 build /Users/mengxiang/Downloads/react-monorepo-project-template-master/packages/mx-deisgn-icon
+> npm run build:types && npm run build:cjs && npm run build:es
+
+
+> @mx-design/icon@0.2.0 build:types
+> rimraf types && tsc -d --emitDeclarationOnly
+
+
+> @mx-design/icon@0.2.0 build:cjs
+> rimraf lib && mx buildLib --mode cjs
+

@@ -1,6 +1,6 @@
 {
   "name": "@mx-design/icon",
-  "version": "0.2.0",
+  "version": "0.4.0",
   "description": "react icon lib",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -19,6 +19,7 @@
   "scripts": {
     "start": "vite",
     "plop": "plop",
+    "clean": "rimraf ./node_modules",
     "build:types": "rimraf types && tsc -d --emitDeclarationOnly",
     "build:es": "rimraf esm && mx buildLib --mode esm",
     "build:cjs": "rimraf lib && mx buildLib --mode cjs",
@@ -30,11 +31,12 @@
   },
   "dependencies": {
     "@mx-design/utils": "0.7.0",
-    "less": "4.1.3"
+    "less": "4.1.3",
+    "@babel/runtime": "7.20.6"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "2.2.0",
-    "@mx-design/cli": "1.0.47",
+    "@mx-design/cli": "1.0.51",
     "plop": "^3.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
